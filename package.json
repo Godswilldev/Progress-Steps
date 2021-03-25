@@ -1,7 +1,7 @@
 {
-  "name": "crowdfunding-product-page-main",
+  "name": "Progress Steps",
   "version": "1.0.0",
-  "description": "![Design preview for the Crowdfunding product page coding challenge](./design/desktop-preview.jpg)",
+  "description": "Progress Steps",
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/main.scss css/style.css -w",
@@ -14,14 +14,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Godswilldev/Crowdfunding-Product-Page.git"
+    "url": "git+https://github.com/Godswilldev/Progress-Steps.git"
   },
   "author": "Godswilldev",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Godswilldev/Crowdfunding-Product-Page/issues"
+    "url": "https://github.com/Godswilldev/Progress-Steps/issues"
   },
-  "homepage": "https://github.com/Godswilldev/Crowdfunding-Product-Page#readme",
+  "homepage": "https://github.com/Godswilldev/Progress-Steps#readme",
   "devDependencies": {
     "autoprefixer": "^7.1.4",
     "concat": "^1.0.3",
