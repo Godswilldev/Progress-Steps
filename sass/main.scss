@@ -1,0 +1,80 @@
+*,
+::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #94b6ab;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.progress {
+    position: relative;
+    font-size: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4rem;
+    width: 40rem;
+    &::before {
+        content: "";
+        position: absolute;
+        background-color: red;
+        width: 100%;
+        height: 0.4rem;
+        z-index: -1;
+        left: 0;
+    }
+    &__circles {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0edd9c;
+        border-radius: 100%;
+        padding: 0.5rem 1rem;
+        transition: 0.5s ease;
+    }
+    &__line {
+        position: absolute;
+        background-color: rgb(17, 0, 255);
+        width: 0%;
+        height: 0.4rem;
+        z-index: -1;
+        left: 0;
+        transition: 0.5s ease;
+    }
+}
+.active {
+    &.progress__circles {
+        border: 0.3rem solid #0e56dd;
+    }
+}
+.buttons {
+    display: flex;
+    justify-content: space-evenly;
+    .btn {
+        border: none;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 2rem 4rem;
+        cursor: pointer;
+        outline: none;
+        color: #fff;
+        background-color: #0edd9c;
+        border-radius: 0.5rem;
+        &:disabled {
+            cursor: not-allowed;
+            background-color: red;
+        }
+        &:active {
+            transform: scale(0.97);
+        }
+    }
+}
