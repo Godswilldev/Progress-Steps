@@ -1,11 +1,31 @@
-###Running this project
+# How to setup project and run locally
 
-1. Fork the repository to your local computer
+### Clone the repository 
 
-2. Make sure you have npm installed on your computer.
+```
+git clone https://github.com/Godswilldev/Progress-Steps.git
+```
 
-3. Open in your code editor and also Open your terminal and Run the command "npm install".
-   (This will install all the dependencies/devDependencies packages needed)
+### Install all dependencies
 
-4. To make changes and view the project run "npm start".
-   (This will start a live-server and open the project in the browser).
+Using npm
+
+```
+npm install
+```
+
+### Start watching the file and changes
+
+Using npm
+
+```
+npm run watch
+```
+
+### Start project to test from the browser
+
+Using npm
+
+```
+npm start
+```            
